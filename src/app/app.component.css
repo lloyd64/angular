@@ -1,83 +1,105 @@
-.wrapper {
-    width: 400px;
-    border: 2px solid black;
-    display: inline-flex;
-  }
+.bryce{
+  width: 350px;
+  border: 5px solid red;
+  outline: 5px solid blue;
   
-  .image {
-    width: 400px;
-  }
+}
+
+.card{
+  margin: 8px;
+  border: 6px solid blue;
+  outline: 6px solid red;
+  padding: 16px 8px 16px 8px;
+  width: 400px;
+  text-align: center;
+  background-color: #F5F5DD;
   
-  .header {
-    text-align: center;
-    font-weight: bold;
-    font-size: 2rem; /* scales relatively */
+  }
+.card button:hover{
+  background-color: red;
+}
+
+.description{
+  font-size: 21px;
+  color: red;
+  -webkit-text-stroke: .7px blue;
+ }
+.h1{
+  font-size: 35px;
+  color: red;
+  -webkit-text-stroke: 1.2px blue;
+}
+.details{
+  margin: 8px;
+  border: 2px dashed blue;
+  padding: 16px;
+  width: 200px;
+  box-shadow: 10px 5px 5px red;
+}
+
+.buttons button{
+  margin: 8px;
+  border: 2px dashed blue;
+  padding: 8px;
+  width: 150px;
+  box-shadow: 10px 5px 5px red;
+}
+
+  
+
+.duplicate:hover{
+  background-color: red;
+}
+
+.change:hover{
+  background-color: red;
+}
+
+
+.bg-color:hover{
+  background-color: red;
+}
+
+.delete:hover{
+  background-color: red;
+}
+
+
+.img{
+  width: 250px;
+  height: 125px;
+  border: 5px solid red;
+  outline: 5px solid blue;
+}
+
+/* If the screen size is between 500px and 800px, hide all elemtns besides .btn */
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .details{
+    display: none;
+  }
+ 
+}
+
+@media screen and (max-width: 500px){
+  .card{
+    max-width: 250px;
+    padding: 8px 16px 8px 16px;
     
+  }
+  .bryce{
+    width: 200px
     
   }
-  
-  .header h3:hover {
-    font-style: italic; 
-    font-size: 1.1em;
+  .h1{
+    font-size: 22px;
   }
-  
-  .header h3, 
-  .header h4{
-    transition: .3s ease-in-out all;
-    margin: 16px;
-    font-style: normal;
-    
+  p{
+    font-size: 18px;
   }
-  .buttons button:focus, 
-  .buttons button:hover {
-    background-color: rgba(200, 0, 50, .5);
-  }
-  /*
-  .buttons button:active {
-    background-color: rgba(200, 0, 200, .5); - shades in the part of the project you're not actively working on
-  }
-  */
-   
-  .buttons {
-    display: block;
-    
-  }
-  button {
-    padding: 12px;
-    font-size: 32px;
+  .details{
+    width: 100px;
+    padding: 8px 4px 4px 8px;;
   }
   
   
-  
-  details{
-    margin-left: 24px;
-    padding: 10px;
-  }
-  .details summary {
-    font-size: 20px;
-    font-weight: bold;
-    
-  }
-  
-  @media only screen and (max-width: 1200px){
-    .wrapper{
-      background-color: pink;
-    }
-  }
-  @media only screen and (max-width: 600px){
-     .wrapper{
-      background-color: purple;
-    }
-    
-  }
-  @media only screen and (max-width: 425px){
-     .wrapper{
-      font-size: 1em;
-    }
-    details {
-      display: none;
-    }
-    .wrapper{
-      font-size: 1.1em; /*this will take priority*/
-    }
-  }
+}
